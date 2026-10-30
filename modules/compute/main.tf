@@ -48,7 +48,7 @@ resource "azurerm_virtual_machine_extension" "vm_extension" {
   type_handler_version = "2.1"
 
   settings = jsonencode({
-    "fileUris"         = ["https://raw.githubusercontent.com/VadymMelnyk/devops_todolist_terraform_task/main/install-app.sh"],
+    "fileUris"         = ["https://raw.githubusercontent.com/olena-nosenko/devops_todolist_terraform_task/main/install-app.sh"],
     "commandToExecute" = "bash install-app.sh"
   })
 }
